@@ -1,8 +1,9 @@
 class Progressline < Formula
   desc "Track commands progress in a compact one-line format"
   homepage "https://github.com/kattouf/ProgressLine"
-  version "0.1.1"
   license "MIT"
+
+  version = "0.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
