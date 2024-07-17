@@ -3,25 +3,25 @@ class Progressline < Formula
   homepage "https://github.com/kattouf/ProgressLine"
   license "MIT"
 
-  version = "0.2.0"
+  version = "0.2.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kattouf/ProgressLine/releases/download/#{version}/progressline-arm64-apple-macosx.zip"
-      sha256 "1d8ee28169d68ac3ff00c876cf9f41507079e060f652e6072941f160b2efa0f5"
+      sha256 "5d5e21816785a46a5947574a2ce02bc0241837401a2883d769c5b2d66b69d7a1"
     else
       url "https://github.com/kattouf/ProgressLine/releases/download/#{version}/progressline-x86_64-apple-macosx.zip"
-      sha256 "dd9e5ac821cecfff2c541d809f2c72348c4350b2231954562da0660a96d2fcbc"
+      sha256 "3ca691167b807a49db48622d8bec2874ac85692a00c558707b364884ef442952"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/kattouf/ProgressLine/releases/download/#{version}/progressline-aarch64-unknown-linux-gnu.zip"
-      sha256 "6c88b714555deae2ba06f402127076f5747bda2d0e35e091dff29a53429e5f4b"
+      sha256 "0c501f5f257be53707873fbab39e1135573fb4e01b76f4a13e7e434e924753bd"
     else
       url "https://github.com/kattouf/ProgressLine/releases/download/#{version}/progressline-x86_64-unknown-linux-gnu.zip"
-      sha256 "745833ca0283cb25b35bc3a42cef96347f289542963b476c853c3f2ca22e56fa"
+      sha256 "2dce6630a8908a1283c5b985c8ee8ac9337d014ab12b56b9a9eded8d716bad59"
     end
   end
 
